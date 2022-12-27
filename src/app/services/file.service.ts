@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { firstValueFrom, observable, Observable, of } from 'rxjs';
 import { file, fileType } from '../entities/file';
-
+    
 @Injectable({
   providedIn: 'root'
 })
