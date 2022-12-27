@@ -1,0 +1,32 @@
+{{fileList.length}}
+<button (click)="reload()">kjh</button>
+<div class="flex">
+  <h2>רשימת קבצים</h2>
+  <div>
+    <button mat-button color="primary" (click)="newFile()">
+      <mat-icon>insert_drive_file</mat-icon>
+      קובץ חדש
+    </button>
+  </div>
+  <div *ngFor="let file of fileList">
+    <app-file [inFile]="file" (updatedOccured)="reload()"></app-file>
+  </div>
+
+  <div class="footer">
+    <mat-label>
+      נפח הקבצים ברשימה:
+      {{fileList | filesTotalSize }}
+    </mat-label>
+    <div>
+      <button mat-button color="primary" (click)="prepareDist()">
+        <mat-icon>cloud_upload</mat-icon>
+        הכנה להפצה
+      </button>
+      <button mat-button color="primary" (click)="split()">
+        <mat-icon>call_split</mat-icon>
+        פיצול קבצים
+      </button>
+
+    </div>
+  </div>
+</div>

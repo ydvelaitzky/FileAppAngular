@@ -1,0 +1,67 @@
+::ng-deep .mat-form-field-subscript-wrapper {
+  display: none;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 0.5em;
+}
+
+::ng-deep {
+  mat-datepicker-toggle {
+    position: relative;
+    button {
+      /* position: absolute !important;
+            top: -26px;
+            right: 58px; */
+    }
+  }
+}
+$color: #9c9cdd;
+.example-card {
+  max-width: 220px;
+  border: 1px solid $color;
+}
+.mat-card-header {
+  background-color: lighten($color, 20%);
+  padding: 5px;
+  &.selected {
+    background-color: lighten($color, 12%);
+  }
+}
+
+.mat-card {
+  padding: 0;
+  max-width: 300px;
+}
+
+.mat-card-content {
+  padding: 5px;
+}
+.tools {
+  margin-left: 0px;
+  mat-icon {
+    cursor: pointer;
+    &:hover {
+      color: blue;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-btn {
+  display: flex;
+  justify-content: left;
+  button {
+    margin: 10px;
+    border: 1px solid gray;
+  }
+}
+
+
+.error{
+  color:red;
+}
